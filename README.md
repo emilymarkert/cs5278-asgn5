@@ -80,3 +80,24 @@ This project will benefit sorority sisters undergoing Recruitment training by al
 1. People are pretty responsive, but if I couldn’t get a response I would miss opportunities to buy something (like clothing).
 2. There is the potential for missing a meeting and getting a consequence such as a fine, and being a detriment to the chapter by missing an event.
 3. I could be unprepared or could miss a meeting, which would result in a fine.
+
+# Requirements
+* Commands for questions about:
+  * Recruitment dates and times
+  * Recruitment Workshop dates and times
+  * Format for sending in Recruitment excuses
+  * Required clothing items for a given event
+* Commands for requesting a link to:
+  * Recruitment workshop slides
+  * Spreadsheet of all Recruitment dates
+  * Spreadsheet of excuse deadlines
+* Sends question/request on to relevant officer if does not match a supported command, and sends the officer's response back to the asker
+
+# Development Approach
+In the first stage of my process, I have empathized with the users and collected requirements. As I am personally a sorority officer who is highly involved with Recruitment, I was able to draw upon my own experience as well as my interviews with three other sorority members. In my own experience, many members, especially new members, have trouble keeping track of different resources and requirements related to Recruitment, and reatedly ask similar questions to officers and other members. All interviewees listed reaching out to officers and/or other chapter members when asked how they go about finding resources, and as an officer, I can personally attest that it is overwhelming to be asked so many questions. Thus, the motivation of this systems is to automatically answer as many common recruitment questions as possible to reduce the burden on officers and other members who may receive questions.
+
+After empathizing with the user and gathering requirements, I will brainstorm possible solutions. In my brainstorming, I will consider possible formats and structures for commands, possible methods of collecting and storing the information that will be used to answer questions, and how data should be updated. I will also consider how the system architecture could best support these features. In designing the system architecture and planning for development, I will focus on scalalbility and extendability. Although the initial focus of this application is Recruitment resources, if successful, it could also be applied to scholarship, philanthropy, or other types of sorority resources. The initial design will focus on resources for a single sorority chapter, but the sytem should be able to scale to support multiple chapters in the future.
+
+To ensure that development is sustainable, I will initially implement functionality only for question commands. Once the question commands have been completed and are functional, I will move on the request commands, and then to functionality that asks officers for unknown ansers. By starting with a subset of the system and gradually building onto it, I will be able to test and evaluate my system at each stage before moving on to the next one. As in Agile development, this will allow to fail and recover quickly, and should prevent me from going too far down an unsuccessful or unsustainable path.
+
+To test the system, I will initially test all use cases individuallly to ensure that the system's functionality is working correctly. After I have personally tested the system, I will train a small group of sorority members in using the system and will ask them to use and evaluate its functionality. This will allow me to perform a more realistic tests, as sorority members who are unfamiliar with the development of the system will serve as its main users. If the pilot testing is successful, I will then release the system to the entire sorority chapter, and will train them in using the provided set of commands. After the system has been relesaed, I will maintain it by both updating the data it draws from, and addressing any bugs that come. I will also need to keep track of changes in the system's dependencies, such as updated packages, that could break the system and perform my own updates as needed. Since I will be graduating after next year, it will be important that I carefuly document the system so that future sorority members can use and maintain it when I am no longer able to.
